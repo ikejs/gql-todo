@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ikejs/gql-todo#readme",
   "dependencies": {
     "apollo-server": "^2.24.0",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "uid": "^2.0.0"
   }
 }

@@ -3,14 +3,19 @@ const { gql } = require('apollo-server');
 module.exports = gql`
 type Task {
   name: String!,
-  completed: Boolean!
+  completed: Boolean!,
+  date: String,
+  id: String,
 },
 
 type Query {
-  tasks: [Task]!
+  getAllTodos: [Task]!
+  getTodo(id: String): Task!
+  getSortedTodos(completed: Boolean!): [Task]!
 },
 
 type Mutation {
   addTask(name: String!): [Task!]!
+  completeTodo(id: String!): [Task!]!
 },
 `;

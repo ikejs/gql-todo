@@ -5,4 +5,11 @@ module.exports = {
   completed: ({ completed }) => {
     return completed;
   },
+  date: ({ date }) => {
+    return date.toDateString();
+  },
+  id: ({ id }) => {
+    return id;
+  },
 };
+ 
